@@ -120,4 +120,7 @@
   <data name="Invoice" xml:space="preserve">
     <value>发票</value>
   </data>
+  <data name="AddInvoice" xml:space="preserve">
+    <value>添加账单</value>
+  </data>
 </root>

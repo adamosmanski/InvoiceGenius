@@ -120,4 +120,7 @@
   <data name="Invoice" xml:space="preserve">
     <value>فاتورة</value>
   </data>
+  <data name="AddInvoice" xml:space="preserve">
+    <value>إضافة فاتورة</value>
+  </data>
 </root>

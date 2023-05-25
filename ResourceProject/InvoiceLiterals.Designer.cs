@@ -61,6 +61,15 @@ namespace ResourceProject {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Add invoice.
+        /// </summary>
+        internal static string AddInvoice {
+            get {
+                return ResourceManager.GetString("AddInvoice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Invoice.
         /// </summary>
         internal static string Invoice {
