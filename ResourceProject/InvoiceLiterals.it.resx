@@ -123,4 +123,16 @@
   <data name="Invoice" xml:space="preserve">
     <value>Fattura</value>
   </data>
+  <data name="Company" xml:space="preserve">
+    <value>Società</value>
+  </data>
+  <data name="Customers" xml:space="preserve">
+    <value>Clienti</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Servizi</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Impostazioni</value>
+  </data>
 </root>

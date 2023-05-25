@@ -123,4 +123,16 @@
   <data name="AddInvoice" xml:space="preserve">
     <value>Dodaj fakturę</value>
   </data>
+  <data name="Company" xml:space="preserve">
+    <value>Firma</value>
+  </data>
+  <data name="Customers" xml:space="preserve">
+    <value>Kontrahenci</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Usługi</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
 </root>

@@ -123,4 +123,16 @@
   <data name="AddInvoice" xml:space="preserve">
     <value>添加账单</value>
   </data>
+  <data name="Company" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="Customers" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>服务</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
 </root>
