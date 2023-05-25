@@ -1,0 +1,97 @@
+﻿<mah:MetroWindow x:Class="InvoiceMaster.MessageBoxModule.CustomMessageBox"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:InvoiceMaster.MessageBoxModule"
+      xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      xmlns:LocalResources="clr-namespace:InvoiceMaster"
+      mc:Ignorable="d" 
+      d:DesignHeight="200" d:DesignWidth="400"
+      Title="CustomMessageBox"
+      WindowStartupLocation="CenterScreen"
+      WindowStyle="None"
+      ResizeMode="NoResize"
+      ShowTitleBar="False"
+      ShowCloseButton="False"
+      ShowMinButton="False"
+      ShowMaxRestoreButton="False"
+      ShowDialogsOverTitleBar="False"
+      ShowIconOnTitleBar="False"
+      Background="Transparent">
+
+    <Border BorderThickness="3" CornerRadius="15" Margin="0">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,0">
+                <GradientStop Offset="0" Color="White"/>
+                <GradientStop Offset="1" Color="#FF212121"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        <Grid>
+            <Grid
+                Height="40"
+                VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <!-- Title -->
+                
+                <StackPanel 
+                Grid.Column="3" 
+                Orientation="Horizontal"
+                HorizontalAlignment="Right"
+                Margin="15,0">
+                    <Button x:Name="MinimizeApp"
+                    Content="_" 
+                    
+                    Style="{StaticResource MinimizeButton}" Click="MinimizeApp_Click"/>
+                    <Button x:Name="CloseApp"
+                    Content="X"
+                    Style="{StaticResource CloseAppButton}" Click="CloseApp_Click">
+                    </Button>
+                </StackPanel>
+            </Grid>
+            <!-- WORKSPACE -->
+            <Grid Background="Transparent"  Margin="0,40,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="10"/>
+
+
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="1"
+                           TextWrapping="Wrap"
+                           Foreground="White"
+                           Margin="10"
+                           Grid.ColumnSpan="3"
+                           Text="{Binding Information,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+
+                <Grid Grid.Row="1"
+                      Grid.Column="1"
+                      Grid.ColumnSpan="1">
+                    <Button Content="Tak"
+                            Style="{StaticResource MessageBoxButton}"/>
+                </Grid>
+                <Grid Grid.Row="1"
+                      Grid.Column="3"
+                      Grid.ColumnSpan="1">
+                    <Button Content="Nie"
+                            Style="{StaticResource MessageBoxButton}"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</mah:MetroWindow>

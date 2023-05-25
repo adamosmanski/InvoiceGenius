@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="InvoiceMaster.SettingsModule.Views.SettingsView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:InvoiceMaster.SettingsModule.Views"
+      xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      xmlns:vm="clr-namespace:InvoiceMaster.SettingsModule.ViewModels"
+      xmlns:effects="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+             
+      >
+    <UserControl.DataContext>
+        <vm:SettingsViewModel/>
+    </UserControl.DataContext>
+    <Border CornerRadius="20" Background="#303030">
+        <Border.Effect>
+            <DropShadowEffect Color="Black" Direction="320" ShadowDepth="5" Opacity="0.7"/>
+        </Border.Effect>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!--<Grid Grid.Row="1" Grid.ColumnSpan="3"
+                  Grid.RowSpan="2" Margin="10,0,0,0">
+                <StackPanel>
+                    <Label Style="{StaticResource DefaultSingleLabel}"
+                   Content="Link do pliku z danymi firmy:"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox  IsReadOnly="True" Text="{Binding PathToCompanyData}"
+                             Style="{StaticResource SettingsTextbox}"/>
+                        --><!--<Button Style="{StaticResource SettingsButton}" 
+                                Command="{Binding OpenMyDocumentsCommand}">
+                            <Image Width="20" Height="20" Source="pack://application:,,,/InvoiceMaster;component/Resources/img/folder_20px.png"/>
+                        </Button>--><!--
+                    </StackPanel>
+                    
+                </StackPanel>
+            </Grid>-->
+        </Grid>
+    </Border>
+</UserControl>
