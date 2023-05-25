@@ -41,7 +41,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="15"/>
             </Grid.RowDefinitions>
-            <Button Grid.Column="1" Style="{StaticResource InvoiceButton}" Command="{Binding Command}">
+            <Button Grid.Column="1" Style="{StaticResource InvoiceButton}" >
                 <StackPanel>
                     <Image Width="40" Height="40" 
                            Source="pack://application:,,,/InvoiceMaster;component/Resources/img/Plus_50px.png"/>
@@ -49,7 +49,27 @@
                            Content="Dodaj nową"/>
                 </StackPanel>
             </Button>
-            <ListView Grid.Row="1" Grid.RowSpan="4" Grid.Column="1" Grid.ColumnSpan="11"/>
+
+            <Button Grid.Column="2" Style="{StaticResource InvoiceButton}"  >
+                <StackPanel>
+                    <Image Width="40" Height="40" 
+                           Source="pack://application:,,,/InvoiceMaster;component/Resources/img/edit_50px.png"/>
+                    <Label Style="{StaticResource DefaultButtonInvoiceLabel}" 
+                           Content="Koryguj"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Column="3" Style="{StaticResource InvoiceButton}" >
+                <StackPanel>
+                    <Image Width="40" Height="40" 
+                           Source="pack://application:,,,/InvoiceMaster;component/Resources/img/edit_50px.png"/>
+                    <Label Style="{StaticResource DefaultButtonInvoiceLabel}" 
+                           Content="Koryguj"/>
+                </StackPanel>
+            </Button>
+
+            <ListView Grid.Row="1" Grid.RowSpan="4" Grid.Column="1" Grid.ColumnSpan="11" 
+                      Style="{StaticResource MahApps.Styles.ListBox}"/>
         </Grid>
     </Border>
 </UserControl>

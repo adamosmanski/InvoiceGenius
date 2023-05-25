@@ -15,17 +15,14 @@ namespace InvoiceMaster.InvoiceModule.ViewModels
 
         public List<Invoices> ListInvoices { get => _listInvoices;set=>this.SetProperty(ref _listInvoices, value); }
 
-        private bool _isEnabled = true;
-        public bool isEnabled { get => _isEnabled; set=>this.SetProperty(ref _isEnabled, value); }
-
-        public ICommand Command { get; }
+      
         private void EnableButton(object obj)
         {
-            isEnabled = false;
+           
         }
         public InvoiceViewModel()
         {
-            Command = new RelayCommand(EnableButton);
+
         }
     }
 }

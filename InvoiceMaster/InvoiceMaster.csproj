@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="Resources\Banknotes_30px.png" />
+    <None Remove="Resources\img\edit_50px.png" />
     <None Remove="Resources\img\folder_20px.png" />
     <None Remove="Resources\img\Plus_50px.png" />
     <None Remove="Resources\img\square_10px.png" />
@@ -30,6 +31,9 @@
 
   <ItemGroup>
     <Resource Include="Resources\img\Banknotes_30px.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\img\edit_50px.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\img\folder_20px.png" />
