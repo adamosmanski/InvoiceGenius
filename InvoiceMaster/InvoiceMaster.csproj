@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\InvoiceGeniusDB\InvoiceGeniusDB.csproj" />
+    <ProjectReference Include="..\ResourceProject\ResourceProject.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,11 +44,5 @@
     <Resource Include="Resources\img\square_10px.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Resources\Language\polish.pl-PL.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-    </EmbeddedResource>
   </ItemGroup>
 </Project>
