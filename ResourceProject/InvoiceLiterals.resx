@@ -120,11 +120,17 @@
   <data name="AddInvoice" xml:space="preserve">
     <value>Add invoice</value>
   </data>
+  <data name="AddNewInvoice" xml:space="preserve">
+    <value>Add</value>
+  </data>
   <data name="Company" xml:space="preserve">
     <value>Company</value>
   </data>
   <data name="Customers" xml:space="preserve">
     <value>Customers</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
   </data>
   <data name="Invoice" xml:space="preserve">
     <value>Invoice</value>

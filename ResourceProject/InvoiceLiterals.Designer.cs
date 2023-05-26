@@ -70,6 +70,15 @@ namespace ResourceProject {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Add.
+        /// </summary>
+        public static string AddNewInvoice {
+            get {
+                return ResourceManager.GetString("AddNewInvoice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Company.
         /// </summary>
         public static string Company {
@@ -84,6 +93,15 @@ namespace ResourceProject {
         public static string Customers {
             get {
                 return ResourceManager.GetString("Customers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Edit.
+        /// </summary>
+        public static string Edit {
+            get {
+                return ResourceManager.GetString("Edit", resourceCulture);
             }
         }
         
