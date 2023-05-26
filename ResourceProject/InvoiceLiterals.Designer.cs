@@ -22,7 +22,7 @@ namespace ResourceProject {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class InvoiceLiterals {
+    public class InvoiceLiterals {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace ResourceProject {
         /// Zwraca buforowane wystąpienie ResourceManager używane przez tę klasę.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ResourceProject.InvoiceLiterals", typeof(InvoiceLiterals).Assembly);
@@ -51,7 +51,7 @@ namespace ResourceProject {
         ///   przypadków przeszukiwania zasobów za pomocą tej klasy zasobów wymagającej zdefiniowania typu.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace ResourceProject {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Add invoice.
         /// </summary>
-        internal static string AddInvoice {
+        public static string AddInvoice {
             get {
                 return ResourceManager.GetString("AddInvoice", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace ResourceProject {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Company.
         /// </summary>
-        internal static string Company {
+        public static string Company {
             get {
                 return ResourceManager.GetString("Company", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace ResourceProject {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Customers.
         /// </summary>
-        internal static string Customers {
+        public static string Customers {
             get {
                 return ResourceManager.GetString("Customers", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace ResourceProject {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Invoice.
         /// </summary>
-        internal static string Invoice {
+        public static string Invoice {
             get {
                 return ResourceManager.GetString("Invoice", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace ResourceProject {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Services.
         /// </summary>
-        internal static string Services {
+        public static string Services {
             get {
                 return ResourceManager.GetString("Services", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace ResourceProject {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Settings.
         /// </summary>
-        internal static string Settings {
+        public static string Settings {
             get {
                 return ResourceManager.GetString("Settings", resourceCulture);
             }
