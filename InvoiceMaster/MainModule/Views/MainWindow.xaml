@@ -11,6 +11,7 @@
         xmlns:SettingsView="clr-namespace:InvoiceMaster.SettingsModule.Views"
         xmlns:InvoiceViewModels="clr-namespace:InvoiceMaster.InvoiceModule.ViewModels"
         xmlns:InvoiceView="clr-namespace:InvoiceMaster.InvoiceModule.Views"
+        xmlns:ResourceProject="clr-namespace:ResourceProject;assembly=ResourceProject"
         mc:Ignorable="d"
         Height="600" Width="1000"
         Background="Transparent"
@@ -91,7 +92,7 @@
             
                 <!-- WORKSPACE -->
             
-            <Grid Background="Transparent"  Margin="0,40,0,0">
+            <Grid Background="Transparent"  Margin="0,40,0,0" Cursor="">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="150"/>
                     <ColumnDefinition Width="*"/>
@@ -116,24 +117,27 @@
                             Grid.Row="0"
                             Grid.RowSpan="8"
                             Background="Transparent">
-                    <Button Style="{StaticResource DefaultMenuButton}" Content="Firma"
+                    <Button Style="{StaticResource DefaultMenuButton}" 
+                            Content="{x:Static ResourceProject:InvoiceLiterals.Company}"
                             CommandParameter="{x:Static MainModels:EMenu.Company}"
                             Command="{Binding ChangeViewCommand}"/>
-                    <Button Style="{StaticResource DefaultMenuButton}" Content="Faktura"
+                    <Button Style="{StaticResource DefaultMenuButton}" 
+                            Content="{x:Static ResourceProject:InvoiceLiterals.Invoice}"
                             CommandParameter="{x:Static MainModels:EMenu.Invoice}"
                             Command="{Binding ChangeViewCommand}"/>
                     
-                    <Button Style="{StaticResource DefaultMenuButton}" Content="Klienci"
+                    <Button Style="{StaticResource DefaultMenuButton}" 
+                            Content="{x:Static ResourceProject:InvoiceLiterals.Customers}"
                             CommandParameter="{x:Static MainModels:EMenu.Customers}"
                             Command="{Binding ChangeViewCommand}"/>
                     <Button Style="{StaticResource DefaultMenuButton}"
-                            Content="Towary i usługi"
+                            Content="{x:Static ResourceProject:InvoiceLiterals.Services}"
                              CommandParameter="{x:Static MainModels:EMenu.Services}"
                             Command="{Binding ChangeViewCommand}"/>
                     <Button Style="{StaticResource DefaultMenuButton}" 
                             CommandParameter="{x:Static MainModels:EMenu.Settings}"
                             Command="{Binding ChangeViewCommand}"
-                            Content="Ustawienia"/>
+                            Content="{x:Static ResourceProject:InvoiceLiterals.Settings}"/>
 
                 </StackPanel>
                 <mah:ContentControlEx Grid.Column="1"
