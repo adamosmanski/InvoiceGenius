@@ -37,7 +37,9 @@
     <Resource Include="Resources\img\edit_50px.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\img\folder_20px.png" />
+    <Resource Include="Resources\img\folder_20px.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\img\Plus_50px.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
