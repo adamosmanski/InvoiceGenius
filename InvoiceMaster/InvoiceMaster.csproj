@@ -14,12 +14,12 @@
     <None Remove="Resources\img\folder_20px.png" />
     <None Remove="Resources\img\Plus_50px.png" />
     <None Remove="Resources\img\print_50px.png" />
+    <None Remove="Resources\img\refresh_50px.png" />
     <None Remove="Resources\img\square_10px.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Converters\" />
-    <Folder Include="InvoiceModule\Models\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\InvoiceGeniusDB\InvoiceGeniusDB.csproj" />
+    <ProjectReference Include="..\ResourceProject\ResourceProject.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -46,6 +47,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\img\print_50px.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\img\refresh_50px.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\img\square_10px.png">

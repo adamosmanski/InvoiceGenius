@@ -6,12 +6,22 @@
       xmlns:local="clr-namespace:InvoiceMaster.SettingsModule.Views"
       xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
       xmlns:vm="clr-namespace:InvoiceMaster.InvoiceModule.ViewModels"
+      xmlns:View="clr-namespace:InvoiceMaster.InvoiceModule.Views"
+      xmlns:Model="clr-namespace:InvoiceMaster.InvoiceModule.Models"
       xmlns:effects="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:ResourceProject="clr-namespace:ResourceProject;assembly=ResourceProject"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.DataContext>
         <vm:InvoiceViewModel/>
     </UserControl.DataContext>
+
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type vm:NewInvoiceViewModel}">
+            <View:NewInvoiceView/>
+        </DataTemplate>
+    </UserControl.Resources>
+ 
     <Border CornerRadius="20" Background="#303030">
         <Border.Effect>
             <DropShadowEffect Color="Black" Direction="320" ShadowDepth="5" Opacity="0.7"/>
@@ -41,43 +51,64 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="15"/>
             </Grid.RowDefinitions>
-            <Button Grid.Column="1" Style="{StaticResource InvoiceButton}" >
+            <Button Grid.Column="1" Style="{StaticResource InvoiceButton}"
+                    Command="{Binding SelectButtonCommand}"
+                    CommandParameter="{x:Static Model:EInvoiceMenu.Add}">
                 <StackPanel>
                     <Image Width="40" Height="40" 
                            Source="pack://application:,,,/InvoiceMaster;component/Resources/img/Plus_50px.png"/>
                     <Label Style="{StaticResource DefaultButtonInvoiceLabel}" 
-                           Content="Dodaj nową"/>
+                           Content="{x:Static ResourceProject:InvoiceLiterals.AddNewInvoice}"/>
                 </StackPanel>
             </Button>
 
-            <Button Grid.Column="2" Style="{StaticResource InvoiceButton}"  >
+            <Button Grid.Column="2" Style="{StaticResource InvoiceButton}"
+                    CommandParameter="{x:Static Model:EInvoiceMenu.Edit}"
+                    Command="{Binding SelectButtonCommand}">
                 <StackPanel>
                     <Image Width="40" Height="40" 
                            Source="pack://application:,,,/InvoiceMaster;component/Resources/img/edit_50px.png"/>
                     <Label Style="{StaticResource DefaultButtonInvoiceLabel}" 
-                           Content="Koryguj"/>
+                           Content="{x:Static ResourceProject:InvoiceLiterals.Edit}"/>
                 </StackPanel>
             </Button>
 
-            <Button Grid.Column="3" Style="{StaticResource InvoiceButton}" >
+            <Button Grid.Column="3" Style="{StaticResource InvoiceButton}"
+                    Command="{Binding SelectButtonCommand}"
+                    CommandParameter="{x:Static Model:EInvoiceMenu.Print}">
                 <StackPanel>
                     <Image Width="40" Height="40" 
                            Source="pack://application:,,,/InvoiceMaster;component/Resources/img/print_50px.png"/>
                     <Label Style="{StaticResource DefaultButtonInvoiceLabel}" 
-                           Content="Drukuj"/>
+                           Content="{x:Static ResourceProject:InvoiceLiterals.Print}"/>
                 </StackPanel>
             </Button>
-            <Button Grid.Column="4" Style="{StaticResource InvoiceButton}" >
+            <Button Grid.Column="4" Style="{StaticResource InvoiceButton}"
+                    Command="{Binding SelectButtonCommand}"
+                    CommandParameter="{x:Static Model:EInvoiceMenu.Preview}">
                 <StackPanel>
                     <Image Width="40" Height="40" 
                            Source="pack://application:,,,/InvoiceMaster;component/Resources/img/eye_50px.png"/>
                     <Label Style="{StaticResource DefaultButtonInvoiceLabel}" 
-                           Content="Podgląd"/>
+                           Content="{x:Static ResourceProject:InvoiceLiterals.Preview}"/>
                 </StackPanel>
             </Button>
 
-            <ListView Grid.Row="1" Grid.RowSpan="4" Grid.Column="1" Grid.ColumnSpan="11" 
-                      Style="{StaticResource MahApps.Styles.ListBox}"/>
+            <Button Grid.Column="5" Style="{StaticResource InvoiceButton}"
+                    Command="{Binding SelectButtonCommand}"
+                    CommandParameter="{x:Static Model:EInvoiceMenu.Refresh}">
+                <StackPanel>
+                    <Image Width="40" Height="40" 
+                           Source="pack://application:,,,/InvoiceMaster;component/Resources/img/refresh_50px.png"/>
+                    <Label Style="{StaticResource DefaultButtonInvoiceLabel}" 
+                           Content="{x:Static ResourceProject:InvoiceLiterals.Refresh}"/>
+                </StackPanel>
+            </Button>
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Grid.RowSpan="4"
+                            Grid.ColumnSpan="11"
+                            Content="{Binding ViewModel,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
         </Grid>
     </Border>
 </UserControl>

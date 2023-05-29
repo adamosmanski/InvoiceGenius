@@ -120,9 +120,6 @@
   <data name="Invoice" xml:space="preserve">
     <value>Faktura</value>
   </data>
-  <data name="AddInvoice" xml:space="preserve">
-    <value>Dodaj fakturę</value>
-  </data>
   <data name="Company" xml:space="preserve">
     <value>Firma</value>
   </data>
@@ -134,5 +131,20 @@
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Ustawienia</value>
+  </data>
+  <data name="AddNewInvoice" xml:space="preserve">
+    <value>Dodaj</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edytuj</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Podgląd</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Drukuj</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Odśwież</value>
   </data>
 </root>

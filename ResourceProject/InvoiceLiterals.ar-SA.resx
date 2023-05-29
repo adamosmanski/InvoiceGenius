@@ -120,9 +120,6 @@
   <data name="Invoice" xml:space="preserve">
     <value>فاتورة</value>
   </data>
-  <data name="AddInvoice" xml:space="preserve">
-    <value>إضافة فاتورة</value>
-  </data>
   <data name="Company" xml:space="preserve">
     <value>الشركة</value>
   </data>
@@ -134,5 +131,20 @@
   </data>
   <data name="Settings" xml:space="preserve">
     <value>إعدادات</value>
+  </data>
+  <data name="AddNewInvoice" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>&amp;تحرير</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>&amp;معاينة:</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>طباعة</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>&amp;تحديث</value>
   </data>
 </root>

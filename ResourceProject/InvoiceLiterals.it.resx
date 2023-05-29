@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AddInvoice" xml:space="preserve">
-    <value>Aggiungi - Fattura</value>
-  </data>
   <data name="Invoice" xml:space="preserve">
     <value>Fattura</value>
   </data>
@@ -134,5 +131,20 @@
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Impostazioni</value>
+  </data>
+  <data name="AddNewInvoice" xml:space="preserve">
+    <value>Aggiungi &gt;&gt;</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Modifica...</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Anteprima</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Stampa</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Aggiorna</value>
   </data>
 </root>
