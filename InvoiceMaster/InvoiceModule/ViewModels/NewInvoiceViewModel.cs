@@ -1,4 +1,5 @@
-﻿using InvoiceMaster.Core;
+﻿using InvoiceGeniusDB.Models;
+using InvoiceMaster.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,13 @@ namespace InvoiceMaster.InvoiceModule.ViewModels
 {
     public class NewInvoiceViewModel : ObserveObject
     {
+        private Invoices _invoices;
+        public Invoices Invoices { get => _invoices; set=>_invoices = value; }
         #region Ctor
-        public NewInvoiceViewModel() { }
+        public NewInvoiceViewModel() 
+        {
+
+        }
         #endregion
     }
 }

@@ -147,4 +147,7 @@
   <data name="Refresh" xml:space="preserve">
     <value>刷新</value>
   </data>
+  <data name="Service" xml:space="preserve">
+    <value>服务</value>
+  </data>
 </root>

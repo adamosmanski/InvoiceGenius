@@ -147,4 +147,7 @@
   <data name="Refresh" xml:space="preserve">
     <value>Odśwież</value>
   </data>
+  <data name="Service" xml:space="preserve">
+    <value>Usługa</value>
+  </data>
 </root>

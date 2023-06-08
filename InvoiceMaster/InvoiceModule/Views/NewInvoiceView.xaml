@@ -14,11 +14,48 @@
     <UserControl.DataContext>
         <vm:NewInvoiceViewModel/>
     </UserControl.DataContext>
-    <Border CornerRadius="20" Background="#303030">
-        <Border.Effect>
-            <DropShadowEffect Color="Black" Direction="320" ShadowDepth="5" Opacity="0.7"/>
-        </Border.Effect>
+    <Border CornerRadius="15">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,0">
+                <GradientStop Offset="0" Color="White"/>
+                <GradientStop Offset="1" Color="#FF212121"/>
+            </LinearGradientBrush>
+        </Border.Background>
 
-
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Label Content="{x:Static ResourceProject:InvoiceLiterals.Service}" 
+                   Grid.Column="1" Grid.Row="1" Style="{StaticResource DefaultSingleLabel}"/>
+            <TextBox Grid.Row="1" 
+                     Grid.Column="2"
+                     Grid.ColumnSpan="3" 
+                     Grid.RowSpan="3" 
+                     TextWrapping="Wrap"
+                     VerticalScrollBarVisibility="Auto"
+                     Text="m{Binding, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                     Style="{StaticResource MultiLineTextbox}"/>
+        </Grid>
     </Border>
 </UserControl>
