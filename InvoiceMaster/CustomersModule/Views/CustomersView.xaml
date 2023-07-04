@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:InvoiceMaster.CustomersModule.Views"
              xmlns:vm="clr-namespace:InvoiceMaster.CustomersModule.ViewModels"
              xmlns:View="clr-namespace:InvoiceMaster.CustomersModule.Views"
+             xmlns:Models="clr-namespace:InvoiceMaster.CustomersModule.Models"
              xmlns:ResourceProject="clr-namespace:ResourceProject;assembly=ResourceProject"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
@@ -31,8 +32,9 @@
                 <RowDefinition Height="15"/>
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
-                <Button Grid.Column="0" Style="{StaticResource InvoiceButton}"
-                    Command="{Binding SelectButtonCommand}">
+                <Button  Style="{StaticResource InvoiceButton}"
+                    Command="{Binding SelectButtonCommand}"
+                        CommandParameter="{x:Static Models:ECustomerMenu.Add}">
                     <StackPanel>
                         <Image Width="40" Height="40" 
                            Source="pack://application:,,,/InvoiceMaster;component/Resources/img/Plus_50px.png"/>
@@ -40,9 +42,8 @@
                            Content="{x:Static ResourceProject:InvoiceLiterals.AddNewInvoice}"/>
                     </StackPanel>
                 </Button>
-
-                <Button Grid.Column="0" Style="{StaticResource InvoiceButton}"
-                    
+                <Button Style="{StaticResource InvoiceButton}" IsEnabled="{Binding IsEditButtonEnabled, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                    CommandParameter="{x:Static Models:ECustomerMenu.Edit}"
                     Command="{Binding SelectButtonCommand}">
                     <StackPanel>
                         <Image Width="40" Height="40" 
@@ -51,26 +52,63 @@
                            Content="{x:Static ResourceProject:InvoiceLiterals.Edit}"/>
                     </StackPanel>
                 </Button>
+                <Button Style="{StaticResource InvoiceButton}" IsEnabled="{Binding IsRemoveButtonEnabled, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                    CommandParameter="{x:Static Models:ECustomerMenu.Remove}"
+                    Command="{Binding RemoveCustomerCommand}">
+                    <StackPanel>
+                        <Image Width="40" Height="40" 
+                           Source="pack://application:,,,/InvoiceMaster;component/Resources/img/trash_50px.png"/>
+                        <Label Style="{StaticResource DefaultButtonInvoiceLabel}" 
+                           Content="{x:Static ResourceProject:InvoiceLiterals.Remove}"/>
+                    </StackPanel>
+                </Button>
+
             </StackPanel>
-           
-            <ListView Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="4"
-                      SelectionMode="Single"
-                      ItemsSource="{Binding CustomersList, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}" 
+
+            <ListView Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="4" x:Name="CustomersListView"
+                      SelectionMode="Single" Foreground="White"
+                      SelectedItem="{Binding SelectedCustomer, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                      ItemsSource="{Binding CustomersList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
                       >
+                <ListView.Resources>
+                    <Style TargetType="GridViewColumnHeader">
+                        <Setter Property="Foreground" Value="White" />
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                        <Setter Property="Margin" Value="10,0,0,0"/>
+                        <Setter Property="BorderBrush" Value="Transparent"/>
+                        <Setter Property="BorderThickness" Value="0"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="GridViewColumnHeader">
+                                    <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                        <ContentPresenter Margin="4"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              TextElement.Foreground="{TemplateBinding Foreground}"
+                                              TextElement.FontWeight="Regular" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListView.Resources>
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header="{x:Static ResourceProject:InvoiceLiterals.NameCompany}" 
-                                        Width="250" 
-                                        DisplayMemberBinding="{Binding Name,UpdateSourceTrigger=PropertyChanged}"/>
+                                        Width="250"
+                                        DisplayMemberBinding="{Binding Name,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
                         <GridViewColumn Header="{x:Static ResourceProject:InvoiceLiterals.Nip}"
                                         Width="100" 
-                                        DisplayMemberBinding="{Binding Nip,UpdateSourceTrigger=PropertyChanged}"/>
+                                        DisplayMemberBinding="{Binding Nip,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
                         <GridViewColumn Header="{x:Static ResourceProject:InvoiceLiterals.Address}"
                                         Width="150"
-                                        DisplayMemberBinding="{Binding Adress,UpdateSourceTrigger=PropertyChanged}"/>
+                                        DisplayMemberBinding="{Binding Adress,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
                         <GridViewColumn Header="{x:Static ResourceProject:InvoiceLiterals.Regon}"
                                         Width="150"
-                                        DisplayMemberBinding="{Binding Regon,UpdateSourceTrigger=PropertyChanged}"/>
+                                        DisplayMemberBinding="{Binding Regon,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
                     </GridView>
                 </ListView.View>
             </ListView>

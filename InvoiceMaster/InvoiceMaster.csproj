@@ -17,6 +17,7 @@
     <None Remove="Resources\img\print_50px.png" />
     <None Remove="Resources\img\refresh_50px.png" />
     <None Remove="Resources\img\square_10px.png" />
+    <None Remove="Resources\img\trash_50px.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -66,6 +67,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\img\square_10px.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\img\trash_50px.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
