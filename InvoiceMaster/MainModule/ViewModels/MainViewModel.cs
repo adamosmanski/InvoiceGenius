@@ -12,6 +12,7 @@ using System.Windows.Input;
 using InvoiceGeniusDB;
 using InvoiceGeniusDB.Models;
 using System.Windows;
+using InvoiceMaster.CustomersModule.ViewModels;
 
 namespace InvoiceMaster.MainModule.ViewModels
 {
@@ -27,6 +28,9 @@ namespace InvoiceMaster.MainModule.ViewModels
                     break;
                 case EMenu.Settings:
                     ViewModel = new SettingsViewModel();
+                    break;
+                case EMenu.Customers:
+                    ViewModel = new CustomerViewModels();
                     break;
                 default:
                     ViewModel = null;

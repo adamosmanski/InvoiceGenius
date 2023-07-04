@@ -12,6 +12,7 @@
     <None Remove="Resources\img\edit_50px.png" />
     <None Remove="Resources\img\eye_50px.png" />
     <None Remove="Resources\img\folder_20px.png" />
+    <None Remove="Resources\img\loading.gif" />
     <None Remove="Resources\img\Plus_50px.png" />
     <None Remove="Resources\img\print_50px.png" />
     <None Remove="Resources\img\refresh_50px.png" />
@@ -23,7 +24,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MahApps.Metro" Version="2.4.9" />
+    <PackageReference Include="DynamicData" Version="7.14.2" />
+    <PackageReference Include="MaterialDesignColors" Version="2.1.4" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+    <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.3.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>

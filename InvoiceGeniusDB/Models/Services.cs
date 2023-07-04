@@ -20,6 +20,8 @@ namespace InvoiceGeniusDB.Models
         [Required]
         public string NameOfService { get; set; }
         [Required]
+        public int Quantity { get; set; }
+        [Required]
         public double NumberOfService { get; set; }
         [Required]
         public int TaxProcent { get; set; }

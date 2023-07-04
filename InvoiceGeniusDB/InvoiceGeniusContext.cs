@@ -16,6 +16,7 @@ namespace InvoiceGeniusDB
         public DbSet<Invoices> Invoices { get; set; }
         public DbSet<Company> Company { get; set; }
         public DbSet<Services> Services { get; set; }
+        public DbSet<Customers> Customers { get; set; }
         public InvoiceGeniusContext() : base()
         {
 

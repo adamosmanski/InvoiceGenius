@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -16,6 +15,10 @@ namespace InvoiceGeniusDB.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
+
+        [ForeignKey("Company")]
+        public int CompanyID { get; set; }
+        public Company Company { get; set; }
 
         [MaxLength(20)]
         [Required]
@@ -39,8 +42,6 @@ namespace InvoiceGeniusDB.Models
         [Required]
         [MaxLength(12)]
         public string DateOfIssue { get; set; }
-        [Required]
-        public List<Services> Services { get; set; }
 
         [Required]
         public double Total { get; set; }

@@ -150,4 +150,31 @@
   <data name="Service" xml:space="preserve">
     <value>الخدمة</value>
   </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>الكمية</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>العميل</value>
+  </data>
+  <data name="EnterNameService" xml:space="preserve">
+    <value>اسم الخدمة.</value>
+  </data>
+  <data name="ChooseCustomer" xml:space="preserve">
+    <value>اختر عميلاً!</value>
+  </data>
+  <data name="Np" xml:space="preserve">
+    <value> 1 _ e g</value>
+  </data>
+  <data name="NameCompany" xml:space="preserve">
+    <value>اسم الشركة</value>
+  </data>
+  <data name="Nip" xml:space="preserve">
+    <value>رقم التعريف الضريبي</value>
+  </data>
+  <data name="Regon" xml:space="preserve">
+    <value>رقم السجل التجاري الوطني!</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
 </root>

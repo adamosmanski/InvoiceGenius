@@ -150,4 +150,31 @@
   <data name="Service" xml:space="preserve">
     <value>Servicio</value>
   </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="EnterNameService" xml:space="preserve">
+    <value>Introduzca el nombre del servicio!</value>
+  </data>
+  <data name="ChooseCustomer" xml:space="preserve">
+    <value>Seleccione una paciente</value>
+  </data>
+  <data name="Np" xml:space="preserve">
+    <value>p.ej. 1</value>
+  </data>
+  <data name="NameCompany" xml:space="preserve">
+    <value>Nombre de la empresa</value>
+  </data>
+  <data name="Nip" xml:space="preserve">
+    <value>Número de identificación fiscal</value>
+  </data>
+  <data name="Regon" xml:space="preserve">
+    <value>¡Número Nacional de Registro Mercantil!</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
 </root>
