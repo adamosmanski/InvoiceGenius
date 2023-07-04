@@ -9,13 +9,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using InvoiceGeniusDB;
+using InvoiceGeniusDB.Models;
+using System.Windows;
+using InvoiceMaster.CustomersModule.ViewModels;
 
 namespace InvoiceMaster.MainModule.ViewModels
 {
     public class MainViewModel : ObserveObject
     {
         #region Methods
-        private void ChangeView(object obj)
+        private async void ChangeView(object obj)
         {
             switch (obj)
             {
@@ -25,11 +29,15 @@ namespace InvoiceMaster.MainModule.ViewModels
                 case EMenu.Settings:
                     ViewModel = new SettingsViewModel();
                     break;
+                case EMenu.Customers:
+                    ViewModel = new CustomerViewModels();
+                    break;
                 default:
                     ViewModel = null;
                     break;
             }
         }
+
         #endregion
 
         #region Commands

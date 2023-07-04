@@ -61,15 +61,6 @@ namespace ResourceProject {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Add invoice.
-        /// </summary>
-        public static string AddInvoice {
-            get {
-                return ResourceManager.GetString("AddInvoice", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Add.
         /// </summary>
         public static string AddNewInvoice {
@@ -79,11 +70,38 @@ namespace ResourceProject {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Address.
+        /// </summary>
+        public static string Address {
+            get {
+                return ResourceManager.GetString("Address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Choose a client.
+        /// </summary>
+        public static string ChooseCustomer {
+            get {
+                return ResourceManager.GetString("ChooseCustomer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Company.
         /// </summary>
         public static string Company {
             get {
                 return ResourceManager.GetString("Company", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Customer.
+        /// </summary>
+        public static string Customer {
+            get {
+                return ResourceManager.GetString("Customer", resourceCulture);
             }
         }
         
@@ -106,11 +124,101 @@ namespace ResourceProject {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Enter the name of the service..
+        /// </summary>
+        public static string EnterNameService {
+            get {
+                return ResourceManager.GetString("EnterNameService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Invoice.
         /// </summary>
         public static string Invoice {
             get {
                 return ResourceManager.GetString("Invoice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Company name.
+        /// </summary>
+        public static string NameCompany {
+            get {
+                return ResourceManager.GetString("NameCompany", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Tax Identification number.
+        /// </summary>
+        public static string Nip {
+            get {
+                return ResourceManager.GetString("Nip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu e.g. 1.
+        /// </summary>
+        public static string Np {
+            get {
+                return ResourceManager.GetString("Np", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Preview.
+        /// </summary>
+        public static string Preview {
+            get {
+                return ResourceManager.GetString("Preview", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Print.
+        /// </summary>
+        public static string Print {
+            get {
+                return ResourceManager.GetString("Print", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Quantity.
+        /// </summary>
+        public static string Quantity {
+            get {
+                return ResourceManager.GetString("Quantity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Refresh.
+        /// </summary>
+        public static string Refresh {
+            get {
+                return ResourceManager.GetString("Refresh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu National Business Registry Number.
+        /// </summary>
+        public static string Regon {
+            get {
+                return ResourceManager.GetString("Regon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Service.
+        /// </summary>
+        public static string Service {
+            get {
+                return ResourceManager.GetString("Service", resourceCulture);
             }
         }
         

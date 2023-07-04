@@ -120,9 +120,6 @@
   <data name="Invoice" xml:space="preserve">
     <value>Faktura</value>
   </data>
-  <data name="AddInvoice" xml:space="preserve">
-    <value>Přidat fakturu</value>
-  </data>
   <data name="Company" xml:space="preserve">
     <value>Společnost</value>
   </data>
@@ -134,5 +131,50 @@
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Nastavení</value>
+  </data>
+  <data name="AddNewInvoice" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Upravit</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Náhled</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Vytisknout</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Aktualizovat</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Služba</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Množství</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Zákazník</value>
+  </data>
+  <data name="EnterNameService" xml:space="preserve">
+    <value>Zadejte název služby.</value>
+  </data>
+  <data name="ChooseCustomer" xml:space="preserve">
+    <value>Vyber klienta</value>
+  </data>
+  <data name="Np" xml:space="preserve">
+    <value>například 1</value>
+  </data>
+  <data name="NameCompany" xml:space="preserve">
+    <value>Název společnosti</value>
+  </data>
+  <data name="Nip" xml:space="preserve">
+    <value>Daňové identifikační číslo</value>
+  </data>
+  <data name="Regon" xml:space="preserve">
+    <value>Číslo národního obchodního rejstříku!</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adresa</value>
   </data>
 </root>

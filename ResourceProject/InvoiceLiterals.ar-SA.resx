@@ -120,9 +120,6 @@
   <data name="Invoice" xml:space="preserve">
     <value>فاتورة</value>
   </data>
-  <data name="AddInvoice" xml:space="preserve">
-    <value>إضافة فاتورة</value>
-  </data>
   <data name="Company" xml:space="preserve">
     <value>الشركة</value>
   </data>
@@ -134,5 +131,50 @@
   </data>
   <data name="Settings" xml:space="preserve">
     <value>إعدادات</value>
+  </data>
+  <data name="AddNewInvoice" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>&amp;تحرير</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>&amp;معاينة:</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>طباعة</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>&amp;تحديث</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>الخدمة</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>الكمية</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>العميل</value>
+  </data>
+  <data name="EnterNameService" xml:space="preserve">
+    <value>اسم الخدمة.</value>
+  </data>
+  <data name="ChooseCustomer" xml:space="preserve">
+    <value>اختر عميلاً!</value>
+  </data>
+  <data name="Np" xml:space="preserve">
+    <value> 1 _ e g</value>
+  </data>
+  <data name="NameCompany" xml:space="preserve">
+    <value>اسم الشركة</value>
+  </data>
+  <data name="Nip" xml:space="preserve">
+    <value>رقم التعريف الضريبي</value>
+  </data>
+  <data name="Regon" xml:space="preserve">
+    <value>رقم السجل التجاري الوطني!</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>العنوان</value>
   </data>
 </root>
