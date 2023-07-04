@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,10 +117,64 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Target" xml:space="preserve">
-    <value>H4sIAAAAAAAACsxa227jNhB9L9B/EPTUAlkr8WKBNpB3kdhJYXQTB1F232lp7AhLkapIBfa39aGf1F/oUHdRkm35liJAEJOcM8O5kMPj/Pv3P/aXVUCNN4iEz9nIvBpcmgYwl3s+W47MWC4+/GZ++fzzT/adF6yM7/m6j2odSjIxMl+lDK8tS7ivEBAxCHw34oIv5MDlgUU8bg0vL3+3rq4sQAgTsQzDfo6Z9ANIPuDHMWcuhDIm9IF7QEU2jjNOgmo8kgBESFwYmVP2xn0X/gDmx2Jyaxo31CdohgN0YRqEMS6JRCOvvwlwZMTZ0glxgNCXdQi4bkGogMz463L5rvu4HKp9WKVgDuXGQvKgJ+DVx8wxli6+l3tT72auu0MXy7XadeK+kTnmQUjY2jR0XddjGql1DecO0nAMMskLQ5u/KDICE0f9XBjjmMo4ghGDWEaEXhhP8Zz67p+wfuE/gI1YTGnVTDQU52oDOPQU8RAiuX6GRWb81DMNqy5n6YKFWEUm35f8ODSNR1RO5hSKLKj4wJE8UhuDiEjwnoiUEGEQpx4kfmxo13Sp37k2TDssH9N4IKuvwJbyFQvmEgvm3l+Bl49kFnxjPlYbCskohhYLN2u98SIQYoPeT6fR+zh92qD06tMpdD7DUpXFSbXaVlk1G2spKwSxRzHlou9aTZM9qmlyxmqKgzlEmX82xHx4kux+WGcH3vsUtfo9WzgQvW3ePP55EvWJ7xsGTDimXn+0W8J+3Lguxwv//FtRyrfE8FSa4zVE50+dCVbbbDEVQsl2n5TDU+h+ISsccbHAt50TW/IP5HdC43cI2gueXvTUajdfMdgJS+LjsVm/Z7IrYq6mYSVbbh3sdrOLR2Rm1Leawjsg9WawtCbtofNmr+EsHaG8AhsQ5VTbzos9lm2+lfb5+XvA6ngQ2A8kDDEqlQdCNmI46etg/MHp3zkHKYblipYGurC20IRXG1mCNqs86sG9HwmJRUjmRMV97AWNZR0R7fB1rrQeNP2CLwOQr1d/t2XQ7aADo3TlPe4uwCpONgqFJZ3aE1nHJZRELf33mNM4YF09/Cbp9OCuyqcjuyPk3XEVIx/rYYfqdWtmqIHd5bO+tYqQDTUxbEsLgh7pyuGRrdS6OD1zdsqrol4PSawukB0yq1u0M7UmWmpNeoW03l7Wgluf2h1TaxqrmNpUvxKoNGJ6LVSm+u69C1Wf3B231uhVMWsT/fCarixHeyClvVgNJh3aHaPWWFWRahO741WbpSpcdbxHTIuWqRbMYrSHXWkLVDMpHTrzYdVoFvQlhfaiadCaAzu7qLdTio2bO11iGuicN99Tt7azFhKCgVowcP6iY+onIcoXPBDmL0DI9FWOz1LVYteIyf8PSWgJ4dHdmMKz83S+cupW7mCP93SugL2RyH0lUfMxdhDz1gqbcG/7E2utmIrkOoQ32w+0Py12dk7qNJnTRkO1ulARUcdgmY6Wn60kUo7+S0BWvx6LGFpQTuQxeKHDrNO5ngPRqvzN0YLSQs+0F+TwCOxLUhEHci+HObHGp/SB6seRNB/eB1MfaQMwMr05R/tTO9NJX2c19mVG2lQczJs0Wx7bqn7Xak9A+MsSQn3zysBVvUQJmq+ZsgXPI4qbq1qUL9GPNJDEwyDcRNJfEFcmGSlEwqMleTUy7/AM8aZsFsswljdCQDCnNa7JtjbrT8ihus32LFSfxDG2gGb6uAWYsdvYp15h931LlnZAqHzMLiG0CnlEhFviHjOkR852BMrcN4EQmLrCXiAIKYKJGXPIG4L0tw1pwq+wJO4671y7QbYHou52e+KTZUQCkWGU8ur/Byz1DwSf/wMAAP//AwAB9HnSciAAAA==</value>
+  <data name="AddNewInvoice" xml:space="preserve">
+    <value>Add</value>
   </data>
-  <data name="DefaultSchema" xml:space="preserve">
-    <value>dbo</value>
+  <data name="Company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="Customers" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="EnterNameService" xml:space="preserve">
+    <value>Enter the name of the service.</value>
+  </data>
+  <data name="ChooseCustomer" xml:space="preserve">
+    <value>Choose a client</value>
+  </data>
+  <data name="Np" xml:space="preserve">
+    <value>e.g. 1</value>
+  </data>
+  <data name="NameCompany" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="Nip" xml:space="preserve">
+    <value>Tax Identification Number</value>
+  </data>
+  <data name="Regon" xml:space="preserve">
+    <value>National Business Registry Number</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
   </data>
 </root>

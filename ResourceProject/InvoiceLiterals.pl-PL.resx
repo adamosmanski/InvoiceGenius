@@ -120,9 +120,6 @@
   <data name="Invoice" xml:space="preserve">
     <value>Faktura</value>
   </data>
-  <data name="AddInvoice" xml:space="preserve">
-    <value>Dodaj fakturę</value>
-  </data>
   <data name="Company" xml:space="preserve">
     <value>Firma</value>
   </data>
@@ -134,5 +131,50 @@
   </data>
   <data name="Settings" xml:space="preserve">
     <value>Ustawienia</value>
+  </data>
+  <data name="AddNewInvoice" xml:space="preserve">
+    <value>Dodaj</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edytuj</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Podgląd</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Drukuj</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Odśwież</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Usługa</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Ilość</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Klient</value>
+  </data>
+  <data name="EnterNameService" xml:space="preserve">
+    <value>Wpisz nazwę usługi.</value>
+  </data>
+  <data name="ChooseCustomer" xml:space="preserve">
+    <value>Wybierz klienta</value>
+  </data>
+  <data name="Np" xml:space="preserve">
+    <value>np.: 1</value>
+  </data>
+  <data name="NameCompany" xml:space="preserve">
+    <value>Nazwa spółki</value>
+  </data>
+  <data name="Nip" xml:space="preserve">
+    <value>NIP</value>
+  </data>
+  <data name="Regon" xml:space="preserve">
+    <value>REGON</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adres</value>
   </data>
 </root>

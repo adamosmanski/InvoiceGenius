@@ -1,17 +1,19 @@
-﻿<mah:MetroWindow x:Class="InvoiceMaster.MainModule.MainWindow"
+﻿<Window x:Class="InvoiceMaster.MainModule.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InvoiceMaster.MainModule"
-        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:vm="clr-namespace:InvoiceMaster.MainModule.ViewModels"
         xmlns:MainModels="clr-namespace:InvoiceMaster.MainModule.Models"
         xmlns:SettingsViewModels="clr-namespace:InvoiceMaster.SettingsModule.ViewModels"
         xmlns:SettingsView="clr-namespace:InvoiceMaster.SettingsModule.Views"
+        xmlns:CustomerViewModels="clr-namespace:InvoiceMaster.CustomersModule.ViewModels"
+        xmlns:CustomerView="clr-namespace:InvoiceMaster.CustomersModule.Views"
         xmlns:InvoiceViewModels="clr-namespace:InvoiceMaster.InvoiceModule.ViewModels"
         xmlns:InvoiceView="clr-namespace:InvoiceMaster.InvoiceModule.Views"
         xmlns:ResourceProject="clr-namespace:ResourceProject;assembly=ResourceProject"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Height="600" Width="1000"
         Background="Transparent"
@@ -19,26 +21,22 @@
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         ResizeMode="NoResize"
-        ShowTitleBar="False"
-        ShowCloseButton="False"
-        ShowMinButton="False"
-        ShowMaxRestoreButton="False"
-        ShowDialogsOverTitleBar="False"
-        ShowIconOnTitleBar="False"
         MouseDown="Grid_MouseDown">
-    <mah:MetroWindow.DataContext>
+    <Window.DataContext>
         <vm:MainViewModel/>
-    </mah:MetroWindow.DataContext>
-    <mah:MetroWindow.Resources>
+    </Window.DataContext>
+    <Window.Resources>
         <DataTemplate DataType="{x:Type InvoiceViewModels:InvoiceViewModel}">
             <InvoiceView:InvoiceView/>
         </DataTemplate>
-
+        <DataTemplate DataType="{x:Type CustomerViewModels:CustomerViewModels}">
+            <CustomerView:CustomersView/>
+        </DataTemplate>
         <DataTemplate DataType="{x:Type SettingsViewModels:SettingsViewModel}">
             <SettingsView:SettingsView/>
         </DataTemplate>
 
-    </mah:MetroWindow.Resources>
+    </Window.Resources>
     <Border BorderThickness="3" CornerRadius="15" Margin="0">
         <Border.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="0,0">
@@ -140,10 +138,14 @@
                             Content="{x:Static ResourceProject:InvoiceLiterals.Settings}"/>
 
                 </StackPanel>
-                <mah:ContentControlEx Grid.Column="1"
-                                      Grid.ColumnSpan="6"
-                                      Grid.RowSpan="7" Margin="10"
-                                      Content="{Binding ViewModel,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                <materialDesign:Card UniformCornerRadius="20" Grid.Column="1"
+                                     Grid.ColumnSpan="6"
+                                     Grid.RowSpan="7" Margin="10" 
+                                     materialDesign:ElevationAssist.Elevation="Dp16"
+                                     Background="Transparent"
+                                     Content="{Binding ViewModel,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+
+                </materialDesign:Card>
 
 
                 <!--PROGRESBAR-->
@@ -160,4 +162,4 @@
             </Grid>
         </Grid>
     </Border>
-</mah:MetroWindow>
+</Window>

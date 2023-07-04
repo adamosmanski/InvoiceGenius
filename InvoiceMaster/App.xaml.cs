@@ -11,6 +11,9 @@ using Newtonsoft.Json;
 using System.IO;
 using InvoiceMaster.CompanyModule.Model;
 using System.Globalization;
+using System.Threading;
+using InvoiceGeniusDB;
+using Microsoft.EntityFrameworkCore;
 
 namespace InvoiceMaster
 {
@@ -21,7 +24,13 @@ namespace InvoiceMaster
     {
         protected void Start(object sender, StartupEventArgs e)
         {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("pl-PL");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("pl-PL");
             var jsonPathFile = Path.Combine(Directory.GetCurrentDirectory(), "CompanyData.json");
+            using (var dbContext = new InvoiceGeniusContext())
+            {
+                dbContext.Database.Migrate();
+            }
             if (File.Exists(jsonPathFile))
             {
                 string jsonData = File.ReadAllText(jsonPathFile);
@@ -45,6 +54,7 @@ namespace InvoiceMaster
                 OwnCreatorCompanyView ownCreatorCompanyView = new OwnCreatorCompanyView();
                 ownCreatorCompanyView.Show();
             }
+
         }
     }
 }

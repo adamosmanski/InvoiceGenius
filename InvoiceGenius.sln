@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceMaster", "InvoiceMas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceGeniusDB", "InvoiceGeniusDB\InvoiceGeniusDB.csproj", "{CD94002A-6028-4F68-97DB-6A2B145C357F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResourceProject", "ResourceProject\ResourceProject.csproj", "{884B5004-1749-4AB1-A6FF-93A193A02313}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResourceProject", "ResourceProject\ResourceProject.csproj", "{884B5004-1749-4AB1-A6FF-93A193A02313}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,9 +32,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		RESX_ConfirmAddLanguageFile = True
-		RESX_AutoCreateNewLanguageFiles = True
-		RESX_SortFileContentOnSave = False
 		SolutionGuid = {DC6DBC0D-60AB-4E84-9091-D58643D5F56A}
+		RESX_SortFileContentOnSave = False
+		RESX_AutoCreateNewLanguageFiles = True
+		RESX_ConfirmAddLanguageFile = True
 	EndGlobalSection
 EndGlobal
