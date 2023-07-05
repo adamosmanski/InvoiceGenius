@@ -6,6 +6,7 @@ using InvoiceMaster.Core;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,8 +25,8 @@ namespace InvoiceMaster.CustomersModule.ViewModels
         public ICommand EditCustomerCommand { get; }
         #endregion 
         #region Properties
-        private List<Customers> _customersList = new List<Customers>();
-        public List<Customers> CustomersList { get => _customersList; set { _customersList = value; SetProperty(ref _customersList, value); } }
+        private ObservableCollection<Customers> _customersList = new ObservableCollection<Customers>();
+        public ObservableCollection<Customers> CustomersList { get => _customersList; set { _customersList = value; SetProperty(ref _customersList, value); } }
         private bool _isEditButtonEnabled = false;
         public bool IsEditButtonEnabled
         {
@@ -79,28 +80,25 @@ namespace InvoiceMaster.CustomersModule.ViewModels
                 await context.SaveChangesAsync();
             }
             SelectedCustomer = null;
-            
             OnPropertyChanged(nameof(SelectedCustomer));
-            LoadFromDatabase();
+            
+            await LoadFromDatabase();
         }
-        private void LoadFromDatabase()
+        private async Task LoadFromDatabase()
         {
             _customersList.Clear();
             using (InvoiceGeniusContext ct = new InvoiceGeniusContext())
             {
-                _customersList.AddRange(ct.Customers.ToList());
+                _customersList.AddRange(await ct.Customers.ToListAsync());
             }
-
+            OnPropertyChanged(nameof(CustomersList));
         }
         #endregion
         #region ctor
         public CustomerViewModels() 
         {
             LoadFromDatabase();
-            RemoveCustomerCommand = new RelayCommand(async delegate 
-            {
-                await Task.Run(() => DeleteCustomer());
-            });
+            RemoveCustomerCommand = new AsyncRelayCommand(DeleteCustomer);
         }
         #endregion
     }
