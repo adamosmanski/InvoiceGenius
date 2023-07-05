@@ -177,4 +177,7 @@
   <data name="Address" xml:space="preserve">
     <value>Address</value>
   </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
 </root>

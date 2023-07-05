@@ -45,4 +45,66 @@ namespace InvoiceMaster.Core
 #pragma warning restore CS8604 // Możliwy argument odwołania o wartości null.
         }
     }
+    public class AsyncRelayCommand : AsyncCommandBase
+    {
+        private readonly Func<Task> _callback;
+
+        public AsyncRelayCommand(Func<Task> callback)
+        {
+            _callback = callback;
+        }
+
+        protected override async Task ExecuteAsync(object parameter)
+        {
+            await _callback();
+        }
+    }
+    public abstract class AsyncCommandBase : ICommand
+    {
+        private readonly Action<Exception> _onException;
+
+        private bool _isExecuting;
+        public bool IsExecuting
+        {
+            get
+            {
+                return _isExecuting;
+            }
+            set
+            {
+                _isExecuting = value;
+                CanExecuteChanged?.Invoke(this, new EventArgs());
+            }
+        }
+
+        public event EventHandler CanExecuteChanged;
+
+        public AsyncCommandBase()
+        {
+            
+        }
+
+        public bool CanExecute(object parameter)
+        {
+            return !IsExecuting;
+        }
+
+        public async void Execute(object parameter)
+        {
+            IsExecuting = true;
+
+            try
+            {
+                await ExecuteAsync(parameter);
+            }
+            catch (Exception ex)
+            {
+                _onException?.Invoke(ex);
+            }
+
+            IsExecuting = false;
+        }
+
+        protected abstract Task ExecuteAsync(object parameter);
+    }
 }
